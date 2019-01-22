@@ -1,0 +1,7 @@
+optimization: 2
+allow-newer: all
+jobs: $ncpus
+packages:
+  shared/
+  backend/
+  frontend/

@@ -1,0 +1,7 @@
+compiler: ghcjs
+benchmarks: False
+optimization: 1
+jobs: $ncpus
+packages:
+  shared/
+  frontend/
