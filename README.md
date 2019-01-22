@@ -1,7 +1,7 @@
-Multi-package Pure Skeleton with Development Environment
+An Example Chat Application in Pure
 ---
 
-This repo is an example of combining `cabal.project`, `Nix`, `node`, and `pure-platform` for an improved developer experience.
+This repo contains a simple chat application from [purehs.org](http://purehs.org/tut/introduction).
 
 First run
 ---
@@ -38,6 +38,8 @@ To run a frontend development server that will:
 $ ./ghcjs npm install
 $ ./ghcjs npm run dev:frontend
 ```
+
+> NOTE: If you don't browse to localhost:8080 and change the browser sync configurations to not synchronize clicks/inputs, you will see duplicated messages.
 
 The web server configuration is at `dist/site/bs-config.js`.
 
@@ -85,7 +87,7 @@ Nix can be used for creating deterministic, production-ready build products. You
   $ nix-build -o frontend-result -A ghcjs.frontend
   ```
 
-Thanks
+About
 ---
 
-Thanks to [Will Fancher](https://github.com/elvishjerricco) for [reflex-project-skeleton](https://github.com/elvishjerricco/reflex-project-skeleton) which this project is based on.
+This repo is based on [pure-project-skeleton](https://github.com/grumply/pure-project-skeleton) which is based on [Will Fancher's](https://github.com/elvishjerricco) [reflex-project-skeleton](https://github.com/elvishjerricco/reflex-project-skeleton).
